@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="dialog_background">#E1E1E1</color>
+  <color name="input_background">#FFFFFF</color>
+
+  <color name="text">#000000</color>
+  <color name="button">#3785F6</color>
+  <color name="message">#989997</color>
+  <color name="destructive">#EB847A</color>
+  <color name="input_border">#ACACAC</color>
+  <color name="input_cursor">#000000</color>
+  <color name="line">#B4B4B4</color>
+
+  <dimen name="title">20sp</dimen>
+  <dimen name="message">16sp</dimen>
+  <dimen name="input">16sp</dimen>
+  <dimen name="button">20sp</dimen>
+  <dimen name="dialog_radius">16dp</dimen>
+  <dimen name="dialog_space">16dp</dimen>
+  <dimen name="input_radius">10dp</dimen>
+  <dimen name="input_space_horizontal">8dp</dimen>
+  <dimen name="input_space_vertical">8dp</dimen>
+  <dimen name="content_space">4dp</dimen>
+  <dimen name="content_input_space">16dp</dimen>
+  <dimen name="button_space">12dp</dimen>
+
+  <style name="AlertTheme" parent="Theme.AppCompat.Dialog.Alert">
+    <item name="android:padding">@dimen/dialog_space</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+  </style>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal"
+  android:weightSum="2">
+
+  <TextView
+    android:id="@+id/button1"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center"
+    android:padding="@dimen/button_space"
+    android:text="Cancel"
+    android:textColor="@color/button"
+    android:textSize="@dimen/button"
+    android:textStyle="bold" />
+
+  <View
+    android:layout_width="1dp"
+    android:layout_height="match_parent"
+    android:background="@color/line" />
+
+  <TextView
+    android:id="@+id/button2"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center"
+    android:padding="@dimen/button_space"
+    android:text="OK"
+    android:textColor="@color/button"
+    android:textSize="@dimen/button" />
+</LinearLayout>

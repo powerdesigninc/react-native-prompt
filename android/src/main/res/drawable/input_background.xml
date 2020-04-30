@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+  <stroke android:width="1dp" android:color="@color/input_border" />
+  <solid android:color="@color/input_background" />
+  <corners android:radius="@dimen/input_radius" />
+  <padding
+    android:bottom="@dimen/input_space_vertical"
+    android:left="@dimen/input_space_horizontal"
+    android:right="@dimen/input_space_horizontal"
+    android:top="@dimen/input_space_vertical" />
+</shape>

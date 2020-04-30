@@ -1,0 +1,39 @@
+{
+  "name": "@powerdesigninc/react-native-prompt",
+  "version": "0.2.1",
+  "description": "React Native Prompt",
+  "main": "index.ts",
+  "keywords": [
+    "react-native",
+    "prompt"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "android/src",
+    "android/build.gradle",
+    "index.ts"
+  ],
+  "author": {
+    "name": "Power Design Inc",
+    "email": "developer@powerdesigninc.us",
+    "url": "https://github.com/powerdesigninc"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": "^0.62.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/powerdesigninc/react-native-prompt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/powerdesigninc/react-native-prompt/issues"
+  },
+  "homepage": "https://github.com/powerdesigninc/react-native-prompt",
+  "devDependencies": {
+    "@types/react-native": "^0.62.2",
+    "typescript": "^3.8.3"
+  }
+}
