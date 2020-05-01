@@ -28,7 +28,7 @@ class PromptDialog(private val activity: Activity, private val title: String, pr
     }
 
     // message
-    if (message != null) {
+    if (!message.isNullOrBlank()) {
       dialogView.findViewById<TextView>(R.id.message).apply {
         text = message
         visibility = View.VISIBLE
@@ -53,7 +53,7 @@ class PromptDialog(private val activity: Activity, private val title: String, pr
         }
       }
 
-      if (defaultValue != null) {
+      if (!defaultValue.isNullOrBlank()) {
         text = SpannableStringBuilder(defaultValue)
         setSelection(defaultValue.length)
       }
