@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {StyleSheet, Text, TouchableOpacity, View, SafeAreaView} from 'react-native';
 
 import prompt from '@powerdesigninc/react-native-prompt';
 
@@ -7,7 +7,7 @@ const App = () => {
   const [input, setInput] = useState('');
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Text style={styles.result}>You typed: {input}</Text>
 
       <View style={styles.buttonContainer}>
@@ -70,7 +70,7 @@ const App = () => {
           <Text style={styles.text}>Three button</Text>
         </TouchableOpacity>
       </View>
-    </View>
+    </SafeAreaView>
   );
 };
 
