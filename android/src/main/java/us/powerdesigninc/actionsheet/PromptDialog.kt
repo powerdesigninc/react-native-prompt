@@ -20,7 +20,7 @@ class PromptDialog(private val activity: Activity, private val title: String, pr
 
   override fun show() {
     val layoutInflater = activity.layoutInflater
-    val dialogView = layoutInflater.inflate(R.layout.dialog, null) as ViewGroup;
+    val dialogView = layoutInflater.inflate(R.layout.dialog, null) as ViewGroup
 
     // title
     dialogView.findViewById<TextView>(R.id.title).apply {
@@ -37,19 +37,25 @@ class PromptDialog(private val activity: Activity, private val title: String, pr
 
     // input
     val inputView = dialogView.findViewById<EditText>(R.id.input).apply {
+      val isSecureText = type == "secure-text"
+      inputType = when (keyboardType) {
+        "phone-pad" -> InputType.TYPE_CLASS_PHONE
+        "email-address" -> InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS
+        "numeric", "number-pad" -> if (isSecureText) {
+          InputType.TYPE_CLASS_NUMBER or InputType.TYPE_NUMBER_VARIATION_PASSWORD
+        } else {
+          InputType.TYPE_CLASS_NUMBER
+        }
+        else -> if (isSecureText) {
+          InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD
+        } else {
+          InputType.TYPE_CLASS_TEXT
+        }
+      }
+
       if (defaultValue != null) {
         text = SpannableStringBuilder(defaultValue)
-      }
-
-      if (type == "secure-text") {
-        inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD
-      }
-
-      // 'default', 'email-address', 'numeric', 'phone-pad', 'ascii-capable', 'numbers-and-punctuation', 'url', 'number-pad', 'name-phone-pad', 'decimal-pad', 'twitter' or 'web-search'
-      when (keyboardType) {
-        "email-address" -> {
-
-        }
+        setSelection(defaultValue.length)
       }
     }
 
@@ -67,7 +73,7 @@ class PromptDialog(private val activity: Activity, private val title: String, pr
 
     for (index in 0 until buttonsOptions.size()) {
       val options = buttonsOptions.getMap(index)!!
-      val buttonViewId = activity.resources.getIdentifier("button${index+1}", "id", activity.applicationInfo.packageName)
+      val buttonViewId = activity.resources.getIdentifier("button${index + 1}", "id", activity.applicationInfo.packageName)
       val buttonView = buttonViewGroup.findViewById<TextView>(buttonViewId)
 
       if (options.hasKey("text")) {

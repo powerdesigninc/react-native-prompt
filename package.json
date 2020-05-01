@@ -1,6 +1,6 @@
 {
   "name": "@powerdesigninc/react-native-prompt",
-  "version": "0.2.1",
+  "version": "0.1.0",
   "description": "React Native Prompt",
   "main": "index.ts",
   "keywords": [

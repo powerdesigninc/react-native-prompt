@@ -10,6 +10,19 @@ const { RNAlertPrompt } = NativeModules;
 const voidCallback = function () {};
 
 type OnPress = (text: string) => void;
+type KeyboardType =
+  | "default"
+  | "email-address"
+  | "numeric"
+  | "phone-pad"
+  | "ascii-capable"
+  | "numbers-and-punctuation"
+  | "url"
+  | "number-pad"
+  | "name-phone-pad"
+  | "decimal-pad"
+  | "twitter"
+  | "web-search";
 
 /**
  * The across platform version (android, ios) of prompt dialog
@@ -20,7 +33,7 @@ export function prompt(
   callbackOrButtons?: OnPress | AlertButton[],
   type?: AlertType,
   defaultValue?: string,
-  keyboardType?: string
+  keyboardType?: KeyboardType
 ) {
   if (Platform.OS == "ios") {
     // ios use original function

@@ -15,10 +15,8 @@
     android:focusable="true"
     android:gravity="center"
     android:padding="@dimen/button_space"
-    android:text="Cancel"
     android:textColor="@color/button"
-    android:textSize="@dimen/button"
-    android:textStyle="bold" />
+    android:textSize="@dimen/button" />
 
   <View
     android:layout_width="1dp"
@@ -35,7 +33,6 @@
     android:focusable="true"
     android:gravity="center"
     android:padding="@dimen/button_space"
-    android:text="OK"
     android:textColor="@color/button"
     android:textSize="@dimen/button" />
 </LinearLayout>
