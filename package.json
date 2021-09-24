@@ -1,6 +1,6 @@
 {
   "name": "@powerdesigninc/react-native-prompt",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "React Native Prompt",
   "main": "index.ts",
   "keywords": [
@@ -21,9 +21,6 @@
     "url": "https://github.com/powerdesigninc"
   },
   "license": "MIT",
-  "peerDependencies": {
-    "react-native": "^0.62.2"
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/powerdesigninc/react-native-prompt.git"
