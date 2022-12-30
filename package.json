@@ -1,6 +1,6 @@
 {
-  "name": "@powerdesigninc/react-native-prompt",
-  "version": "0.1.2",
+  "name": "@rogermiret/react-native-prompt",
+  "version": "0.1.4",
   "description": "React Native Prompt",
   "main": "index.ts",
   "keywords": [
@@ -23,12 +23,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/powerdesigninc/react-native-prompt.git"
+    "url": "git://github.com/rogerxaic/react-native-prompt.git"
   },
   "bugs": {
-    "url": "https://github.com/powerdesigninc/react-native-prompt/issues"
+    "url": "https://github.com/rogerxaic/react-native-prompt/issues"
   },
-  "homepage": "https://github.com/powerdesigninc/react-native-prompt",
+  "homepage": "https://github.com/rogerxaic/react-native-prompt",
   "devDependencies": {
     "@types/react-native": "^0.62.2",
     "typescript": "^3.8.3"

@@ -1,6 +1,6 @@
 # React Native Prompt
 
-[![npm version](https://badge.fury.io/js/%40powerdesigninc%2Freact-native-prompt.svg)](https://badge.fury.io/js/%40powerdesigninc%2Freact-native-prompt)
+[![npm version](https://badge.fury.io/js/%40rogermiret%2Freact-native-prompt.svg)](https://badge.fury.io/js/%40rogermiret%2Freact-native-prompt)
 
 This package helps you to use Prompt Dialog cross platform iOS(Alert.prompt) and Android(Dialog).
 
@@ -45,9 +45,9 @@ Use the same way as [`AlertIOS.prompt`](https://reactnative.dev/docs/alertios#pr
 
 ```bash
 # with npm
-npm install @powerdesigninc/react-native-prompt
+npm install @rogermiret/react-native-prompt
 # with yarn
-yarn add @powerdesigninc/react-native-prompt
+yarn add @rogermiret/react-native-prompt
 ```
 
 ### React Native >= v0.60
@@ -57,13 +57,13 @@ you don't need to link anything.
 ### React Native < v0.60, Manual linking
 
 ```
-react-native link @powerdesigninc/react-native-prompt
+react-native link @rogermiret/react-native-prompt
 ```
 
 ## Example
 
 ```tsx
-import prompt from "@powerdesigninc/react-native-prompt";
+import prompt from "@rogermiret/react-native-prompt";
 
 const App = () => {
   return (
