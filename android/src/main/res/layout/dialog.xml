@@ -34,7 +34,8 @@
     android:layout_marginVertical="@dimen/content_input_space"
     android:background="@drawable/input_background"
     android:textCursorDrawable="@drawable/input_cursor"
-    android:textSize="@dimen/input" />
+    android:textSize="@dimen/input"
+    android:textColor="@color/text" />
 
   <View
     android:layout_width="match_parent"
